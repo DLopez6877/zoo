@@ -8,7 +8,6 @@ import { Animal } from './animal.model';
       <div class="edit-wrapper" *ngIf="childSelectedAnimal">
         <div *ngIf="childSelectedAnimal">
           <h1>Edit {{childSelectedAnimal.name}}</h1>
-          <button class="btn btn-default btn-lg btn-block" (click)="doneButtonClicked()">Done Editing</button>
           <div class="flex-form">
             <div class="form-section">
               <div class="form-group">
@@ -61,6 +60,7 @@ import { Animal } from './animal.model';
               </div>
             </div>
           </div>
+          <button class="btn btn-default btn-lg btn-block" (click)="doneButtonClicked()">Done Editing</button>
         </div>
       </div>
     </div>
